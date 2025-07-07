@@ -18,6 +18,7 @@ h2 {
 }
 
 .box {
+  position: relative;
   border: 2px solid #ccc;
   padding: 10px;
   margin: 10px 0;
@@ -47,12 +48,18 @@ h2 {
 }
 
 .tag {
+  position: absolute;
+  top: -0.52rem;       /* pull it above the box */
+  right: 0;
   background: #ff4081;
   color: white;
-  font-size: 11px;
-  padding: 2px 5px;
-  border-radius: 4px;
-  margin-left: auto;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight:bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  white-space: nowrap;
+  z-index: 10;
 }
 
 .box-content {
@@ -81,13 +88,24 @@ h2 {
   justify-content: space-between;
   padding: 8px 16px;
 }
+.intbox{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding: 8px 16px;
+    position: relative;
+}
 
 .left {
   text-align: left;
+    display:inline-block;
+    position: relative;
 }
 
 .right {
   text-align: right;
+    display:inline-block;
+    position:relative;
 }
 
 
@@ -99,4 +117,15 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+}
+.sub, .orgprice {
+  display:inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  color: #999; /* Color for Discount and sub text */
+  margin-top: 2px;
+  line-height: 1.2;
+}
+.orgprice{
+    text-decoration-line: line-through;
 }
