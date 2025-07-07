@@ -13,18 +13,20 @@
     <div class="box" data-box="1">
       <div class="box-header">
         <input type="radio" name="unit" />
-        <span>1 Unit</span>
-        <span class="discount">10% Off</span>
-        <span class="price">$10.00 USD</span>
+          <div class="intbox">
+          <span class="left">1 Unit
+              <span class="sub">Standard Price</span>
+              </span>
+          <span class="right">$21.60 USD
+               <span class="orgprice">$24.00 USD</span>
+              </span>
+        </div>
+                     
+        <span class="discount">10% Off</span>  
       </div>
       <div class="box-content">
         <div class="item">
           <label>#1</label>
-          <select><option>S</option><option>M</option><option>L</option></select>
-          <select><option>Black</option><option>Blue</option><option>Red</option></select>
-        </div>
-        <div class="item">
-          <label>#2</label>
           <select><option>S</option><option>M</option><option>L</option></select>
           <select><option>Black</option><option>Blue</option><option>Red</option></select>
         </div>
@@ -35,10 +37,16 @@
     <div class="box" data-box="2">
       <div class="box-header">
         <input type="radio" name="unit" />
-        <span>2 Unit</span>
-        <span class="discount">20% Off</span>
-        <span class="price">$18.00 USD</span>
+          <div class="intbox">
+          <span class="left">2 Units
+              <span class="sub">Discounted Price</span>
+          </span>
+          <span class="right">$18.00 USD
+               <span class="orgprice">$24.00 USD</span>
+              </span>
+        </div>
         <span class="tag">MOST POPULAR</span>
+        <span class="discount">20% Off</span> 
       </div>
       <div class="box-content">
         <div class="item">
@@ -58,9 +66,15 @@
     <div class="box" data-box="3">
       <div class="box-header">
         <input type="radio" name="unit" />
-        <span>3 Unit</span>
+          <div class="intbox">
+          <span class="left">3 Units
+              <span class="sub">Discounted Price</span>
+          </span>
+          <span class="right">$16.80 USD
+               <span class="orgprice">$24.00 USD</span>
+              </span>
+        </div>
         <span class="discount">30% Off</span>
-        <span class="price">$24.00 USD</span>
       </div>
       <div class="box-content">
         <div class="item">
@@ -73,6 +87,120 @@
           <select><option>S</option><option>M</option><option>L</option></select>
           <select><option>Black</option><option>Blue</option><option>Red</option></select>
         </div>
+        <div class="item">
+          <label>#3</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>  
+      </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+          <span class="left">Free Delivery</span>
+          <span class="right">Total: $18.00 USD</span>
+        </div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>YAY! It's BOGO</h2>
+
+    <!-- Box 1 -->
+    <div class="box" data-box="1">
+      <div class="box-header">
+        <input type="radio" name="unit" />
+          <div class="intbox">
+          <span class="left">1 Unit
+              <span class="sub">Standard Price</span>
+              </span>
+          <span class="right">$21.60 USD
+               <span class="orgprice">$24.00 USD</span>
+              </span>
+        </div>
+                     
+        <span class="discount">10% Off</span>  
+      </div>
+      <div class="box-content">
+        <div class="item">
+          <label>#1</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box" data-box="2">
+      <div class="box-header">
+        <input type="radio" name="unit" />
+          <div class="intbox">
+          <span class="left">2 Units
+              <span class="sub">Discounted Price</span>
+          </span>
+          <span class="right">$18.00 USD
+               <span class="orgprice">$24.00 USD</span>
+              </span>
+        </div>
+        <span class="tag">MOST POPULAR</span>
+        <span class="discount">20% Off</span> 
+      </div>
+      <div class="box-content">
+        <div class="item">
+          <label>#1</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+        <div class="item">
+          <label>#2</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box" data-box="3">
+      <div class="box-header">
+        <input type="radio" name="unit" />
+          <div class="intbox">
+          <span class="left">3 Units
+              <span class="sub">Discounted Price</span>
+          </span>
+          <span class="right">$16.80 USD
+               <span class="orgprice">$24.00 USD</span>
+              </span>
+        </div>
+        <span class="discount">30% Off</span>
+      </div>
+      <div class="box-content">
+        <div class="item">
+          <label>#1</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+        <div class="item">
+          <label>#2</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+        <div class="item">
+          <label>#3</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>  
       </div>
     </div>
 
